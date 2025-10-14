@@ -1,0 +1,60 @@
+.back-box a{ 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.back {
+    font-size: 20px;
+}
+
+.vacancies {
+     background-color: #1f1c1c;
+      font-family: "Montserrat Alternates", sans-serif;
+      padding: 130px 0 130px 0;
+}
+
+.vacancies__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    gap: 30px;
+}
+
+.vacancie {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.vacancie__title {
+    font-size: clamp(24px, 22.54px + 0.39vw, 30px);
+    color: #000;
+    font-weight: 700;
+}
+
+.vacancie__description {
+    font-weight: 300;
+    color: #000;
+  font-size: clamp(18px, 16.54px + 0.39vw, 24px);
+}
+
+.vacancie__button {
+    background-color: yellow;
+    color: #000;
+    font-size: clamp(16px, 15.03px + 0.26vw, 20px);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    transition: all .4s ease-in-out;
+}
+
+.vacancie__button:hover {
+    background-color: #000;
+    color: yellow;
+}
