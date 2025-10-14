@@ -1,0 +1,86 @@
+@import url('./styles/sections/school.css');
+@import url('./styles/sections/about.css');
+@import url('./styles/sections/courses.css');
+@import url('./styles/sections/form-record.css');
+@import url('./styles/sections/reviews.css');
+@import url('./styles/sections/form.css');
+
+html { 
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.header {
+    padding: 30px 0 30px 0;
+    background-color: #000;
+    color: rgb(190, 190, 8);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header__flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.header__logo .logo {
+    font-size: clamp(24px, 22.54px + 0.39vw, 30px);
+    text-align: center;
+    font-weight: 300;
+}
+
+.haeder__list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header__list-item .header__list-link {
+    font-size: clamp(14px, 13.03px + 0.26vw, 18px);
+    font-weight: 100;
+}
+
+
+.contacts .contacts__box {
+    display: flex;
+    gap: 15px;
+}
+
+.footer {
+    background-color: #1f1c1c;
+    padding: 30px 0 30px 0;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer__flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    PADDING: 0 10px 0 10px;
+}
+
+.footer__title,  .footer__politicy{
+    color: yellow;
+    font-size: clamp(18px, 17.51px + 0.13vw, 20px);
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 15px;
+}

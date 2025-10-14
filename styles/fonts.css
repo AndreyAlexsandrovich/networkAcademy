@@ -1,0 +1,53 @@
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('MontserratAlternates-ExtraLight'),
+    url('../fonts/MontserratAlternates-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('MontserratAlternates-ExtraLight'),
+    url('../fonts/AnyConv.com__MontserratAlternates-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('MontserratAlternates-ExtraLight'),
+    url('../fonts/AnyConv.com__MontserratAlternates-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('MontserratAlternates-ExtraLight'),
+    url('../fonts/AnyConv.com__MontserratAlternates-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('MontserratAlternates-SemiBold'),
+    url('../fonts/AnyConv.com__MontserratAlternates-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face { 
+    font-family: "Montserrat Alternates";
+    src: local('AnyConv.com__MontserratAlternates-Bold'),
+    url('../fonts/AnyConv.com__MontserratAlternates-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

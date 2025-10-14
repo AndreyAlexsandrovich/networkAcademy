@@ -1,0 +1,52 @@
+.reviews {
+    background-color: #1f1c1c;
+     padding: 30px 0 30px 0;
+     font-family: "Montserrat Alternates", sans-serif;
+}
+
+.reviews__title {
+    text-align: center;
+    font-size: clamp(26px, 22.60px + 0.91vw, 40px);
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.reviews__review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 300px;
+    background-color: #535353;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.review__img {
+    width: 70px;
+    height: 70px;
+}
+
+.review__img img { 
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: auto;
+}
+
+.reviews__review-title { 
+     font-size: clamp(18px, 17.27px + 0.19vw, 21px);
+     color: #fff;
+}
+
+.review__text {
+    font-size: 16px;
+    color: #fff;
+}
