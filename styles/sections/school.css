@@ -20,7 +20,7 @@
     margin-bottom: 80px;
 }
 
-.school__box-button button{
+.school__box-button a{
     background-color: rgb(217, 255, 0);
     color: #000;
     border: none;
