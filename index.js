@@ -11,7 +11,7 @@ buttonVacancies.forEach((button) => {
 unplushWrapper.addEventListener("click", (e) => {
    if (e.target === unplushWrapper) { 
        unplushWrapper.style.display = "none";
-       document.body.style.overflow = "hidden";
+       document.body.style.overflow = "";
    }
 });
 

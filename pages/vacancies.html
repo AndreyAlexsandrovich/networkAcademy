@@ -74,28 +74,29 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> 
             <div class="unplush">
                     <div class="form__flex-container form-absolute">
-                        <form action="" class="form__form">
-                            <label for="" class="form__label-name label">Ваше имя:</label>
-                            <input type="text" class="form__input-name input-form">
+                       <form action="javascript:void(0)" class="form__form" id="contact-form-vacancies">
+                            <label for="name-vacancies" class="form__label-name label">Ваше имя:</label>
+                            <input type="text" class="form__input-name input-form" id="name-vacancies">
         
-                            <label for="" class="form-record__label-lastname label">Ваше отчество:</label>
-                            <input type="text" class="form__input-lastname input-form">
+                            <label for="lastname-vacancies" class="form-record__label-lastname label">Ваше отчество:</label>
+                            <input type="text" class="form__input-lastname input-form" id="lastname-vacancies">
 
-                            <label for="" class="form-record__label-lastname label">Ваше направление:</label>
-                            <input type="text" class="form__input-lastname input-form">
+                            <label for="direction-vacancies" class="form-record__label-lastname label">Ваше направление:</label>
+                            <input type="text" class="form__input-lastname input-form" id="direction-vacancies">
 
-                            <label for="" class="form-record__label-phone label">Номер телефона:</label>
-                            <input type="text" class="form__input-phone input-form">
+                            <label for="phone-vacancies" class="form-record__label-phone label">Номер телефона:</label>
+                            <input type="text" class="form__input-phone input-form" id="phone-vacancies">
         
-                            <button class="form__submit">Отправить</button>
+                            <button class="form__submit" type="submit">Отправить</button>
                         </form>
-                        <div class="responseMessage"></div>
+                       
+                        <!-- <div class="responseMessage"></div> -->
                     </div>
                 </div>
     </body>
-    <script src="../js/api.js"></script>
     <script src="../index.js"></script>
+    <script src="../js/api.js"></script>
 </html>

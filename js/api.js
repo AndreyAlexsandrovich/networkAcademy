@@ -2,25 +2,35 @@ const token = "8186032912:AAG2KXx-h4JOILJUmxOyt-2TvSQNTDiLqmE";
 const chatId = "7379813945";
 
 const formStudents = document.querySelector("#contact-form");
-formStudents.addEventListener("submit", (evt) => {
-  evt.preventDefault();
+
+if (document.querySelector('#contact-form')) { 
+  initStudents();
+}
+
+function initStudents() { 
+  formStudents.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    
+    const data = {
+      name: document.querySelector("#name").value,
+      lastname: document.querySelector("#lastname").value,
+      phone: document.querySelector("#phone").value
+    };
   
-  const data = {
-    name: document.querySelector("#name").value,
-    lastname: document.querySelector("#lastname").value,
-    phone: document.querySelector("#phone").value
-  };
+    if (!data.name || !data.phone) {
+      showMessage("❌ Заполните обязательные поля", "error", "responseMessage");
+      return;
+    }
+  
+    sendToTelegram(data, "student");
+  });
 
-  if (!data.name || !data.phone) {
-    showMessage("❌ Заполните обязательные поля", "error", "responseMessage");
-    return;
-  }
+}
 
-  sendToTelegram(data, "student");
-});
 
 
 const formVacancies = document.querySelector("#contact-form-vacancies");
+
 formVacancies.addEventListener("submit", (evt) => {
   evt.preventDefault();
   evt.stopPropagation(); 
@@ -31,6 +41,8 @@ formVacancies.addEventListener("submit", (evt) => {
     direction: document.querySelector("#direction-vacancies").value,
     phone: document.querySelector("#phone-vacancies").value
   };
+  
+  console.log(data, 'Отправка формы');
 
   if (!data.name || !data.phone) {
     showMessage("❌ Заполните имя и телефон", "error", "responseMessage-vacancies");
