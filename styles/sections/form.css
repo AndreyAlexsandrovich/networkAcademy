@@ -69,3 +69,9 @@ display: flex;
      background-color: #000;
     color: yellow;
 }
+
+.responseMessage { 
+    color: #fff;
+     font-size: clamp(11px, 7.84px + 0.84vw, 24px);
+     text-align: center;
+}

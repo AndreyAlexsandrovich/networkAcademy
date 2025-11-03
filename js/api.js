@@ -88,19 +88,19 @@ function sendToTelegram(data, type) {
     .then((result) => {
       if (result.ok) {
         if (type === "student") {
-          showMessage("✅ Заявка отправлена! Мы свяжемся с вами", "success", "responseMessage");
+          showMessage("✅ Заявка отправлена! Мы свяжемся с вами", "success", "responseMessage-student");
           formStudents.reset();
         } else {
           showMessage("✅ Заявка отправлена! Мы свяжемся с вами", "success", "responseMessage-vacancies");
           formVacancies.reset();
         }
       } else {
-        const messageId = type === "student" ? "responseMessage" : "responseMessage-vacancies";
+        const messageId = type === "student" ? "responseMessage-student" : "responseMessage-vacancies";
         showMessage(`❌ Ошибка отправки`, "error", messageId);
       }
     })
     .catch((error) => {
-      const messageId = type === "student" ? "responseMessage" : "responseMessage-vacancies";
+      const messageId = error === "student" ? "responseMessage-student" : "responseMessage-vacancies";
       showMessage("❌ Ошибка сети", "error", messageId);
     });
 }

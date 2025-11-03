@@ -77,7 +77,11 @@
         </footer> 
             <div class="unplush">
                     <div class="form__flex-container form-absolute">
-                       <form action="javascript:void(0)" class="form__form" id="contact-form-vacancies">
+                        <form action="javascript:void(0)" class="form__form" id="contact-form-vacancies">
+                           <div class="header__unplush">
+                               <h2 class="unplush__title">Отправка вакансии</h2>
+                               <button class="popup__close">Закрыть</button>
+                           </div>
                             <label for="name-vacancies" class="form__label-name label">Ваше имя:</label>
                             <input type="text" class="form__input-name input-form" id="name-vacancies">
         
@@ -91,9 +95,9 @@
                             <input type="text" class="form__input-phone input-form" id="phone-vacancies">
         
                             <button class="form__submit" type="submit">Отправить</button>
+                            <div class="responseMessage" id="responseMessage-vacancies"></div>
                         </form>
                        
-                        <!-- <div class="responseMessage"></div> -->
                     </div>
                 </div>
     </body>

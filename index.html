@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="styles/media.css">
     </head>
-    <body class="warpper">
+    <body class="wrapper">
         <header class="header">
             <div class="container">
                 <div class="header__flex-container">
@@ -93,13 +93,15 @@
                                 <p class="lock__description">К сожалению курс еще закрыт, но скоро откроется</p>
                             </div>
                             <h2 class="cards__card-title">
-                                Английский язык
+                                Веб-дизайнер Figma
                             </h2>
-                            <img src="./img/cards/english.jpg" alt="Разработчик">
+                          <div class="cards-box__img">
+                              <img src="./img/cards/figma.jpg" alt="Разработчик">
+                          </div>
                             <p class="cards__card-description">
-                                Курс английского языка. Научитесь самым азам чтобы разговаривать на английском.
+                                Курс по веб-дизайну. Вы научитесь созданиям макетом для будущих продуктов в ИТ компаниях.
                             </p>
-                            <a href="#form-academy" class="cards__card-buy">Купить</a>
+                            <a href="#!" class="cards__card-buy">Подробнее</a>
                         </article>
                         <article class="cards__card">
                             <div class="lock">
@@ -107,37 +109,39 @@
                                 <p class="lock__description">К сожалению курс еще закрыт, но скоро откроется</p>
                             </div>
                             <h2 class="cards__card-title">
-                                Разработчик игр Game Dev
+                                Разработчик игр Roblox Studio
                             </h2>
-                            <img src="./img/cards/gamedev.jpg" alt="Разработчик">
+                            <div class="cards-box__img">
+                              <img src="./img/cards/robloxStudio.jpeg" alt="Разработчик">
+                          </div>
                             <p class="cards__card-description">
-                                Курс по созданию игр. 
+                                Курс по созданию своей роблокс игры.  
                             </p>
-                            <a href="#form-academy" class="cards__card-buy">Купить</a>
+                            <a href="#!" class="cards__card-buy">Подробнее</a>
                         </article>
                         <article class="cards__card">
-                            <div class="lock">
-                                <img src="./img/cards/замок.png" alt="">
-                                <p class="lock__description">К сожалению курс еще закрыт, но скоро откроется</p>
-                            </div>
                             <h2 class="cards__card-title">
-                                Backend-разработчик
+                                scratch
                             </h2>
-                            <img src="./img/cards/backend.png" alt="Разработчик">
+                             <div class="cards-box__img">
+                              <img src="./img/cards/scratch.jpeg" alt="scratch">
+                          </div>
                             <p class="cards__card-description">
-                                Курс для тех, кто хочет попробовать себя в северной части сайта.
+                                Курс подойдет для будущих разработчиков. На курсе студент познакомится с алгоритмами в игровой форме.
                             </p>
-                            <a href="#form-academy" class="cards__card-buy">Купить</a>
+                            <a href="#!" class="cards__card-buy">Подробнее</a>
                         </article>
                         <article class="cards__card">
                             <h2 class="cards__card-title">
                                 Молодой frontend-разработчик
                             </h2>
-                            <img src="./img/cards/frontend.jpg" alt="Разработчик">
+                             <div class="cards-box__img">
+                              <img src="./img/cards/frontend.jpg" alt="frontend">
+                          </div>
                             <p class="cards__card-description">
                                 Курс молодого frontend-разработчика. Вы научитесь делать сайты, узнаете технологию, научитесь создавать, думать как разработчик и освоите нужные знания чтобы в дальнейшем двигаться вперед.
                             </p>
-                            <a href="#form-academy" class="cards__card-buy">Купить</a>
+                            <a href="#!" class="cards__card-buy">Подробнее</a>
                         </article>
                     </div>
                 </div>
@@ -160,6 +164,7 @@
                             <input type="text" class="form__input-phone input-form" id="phone" required>
         
                             <button class="form__submit" type="submit">Отправить</button>
+                            <div class="responseMessage" id="responseMessage-student"></div>
                         </form>
 
                     </div>
@@ -237,8 +242,8 @@
                             <input type="text" class="form__input-phone input-form" id="phone-vacancies">
         
                             <button class="form__submit" type="submit">Отправить</button>
+                            <div class="responseMessage" id="responseMessage-vacancies"></div>
                         </form>
-                       
                     </div>
                 </div>
             </section>
@@ -269,6 +274,28 @@
                 </div>
             </div>
         </footer>
-          <script src="./js/api.js"></script>
+        <template class="description-popup__template">
+            <div class="popup__description">
+               <div class="header__popup-description">
+                 <h5 class="popup__description-title">
+                    
+                </h5>
+                <button class="popup__close">Закрыть</button>
+               </div>
+                <div class="popup__description-content">
+                    <div class="popup__description-img">
+                        <img src="" alt="" class="popup__description-image">
+                    </div>
+                    <div class="box-text">
+                        <p class="popup__description-text">
+                            
+                        </p>
+                            <button class="button-buy" id="button-buy">Приобрести курс</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script src="js/popupCards.js"></script>
+        <script src="./js/api.js"></script>
     </body>
 </html>

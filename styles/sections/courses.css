@@ -34,6 +34,12 @@
     flex: 1 1 300px;
 }
 
+
+.cards-box__img { 
+   overflow: hidden;
+   height: 266px;
+}
+
 .lock { 
   position: absolute;
   left: 0;
@@ -53,7 +59,7 @@
   color: #fff;
 }
 
-.lock img { 
+.cards__card .lock img { 
     width: 56px;
     height: 56px;
 }
@@ -65,7 +71,9 @@
 }
 
 .cards__card img { 
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .cards__card-description {
